@@ -1,0 +1,48 @@
+/* src/components/InfoSection.css */
+.info-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
+}
+
+.info-card {
+  background-color: #fff;
+  padding: 10px;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+
+.info-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 16px;
+  color: #004e97;
+  margin-top: 10px;
+}
+.search-bar {
+  /* padding: 10px; */
+  width: 400px;
+  border: 1px solid #004e97;
+  border-radius: 5px;
+}
+.search-btn {
+  background-color: #ffae00;
+  color: #004e97;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

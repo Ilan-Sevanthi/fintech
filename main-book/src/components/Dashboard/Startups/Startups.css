@@ -1,0 +1,254 @@
+.homepage {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #282c34;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure navbar spans full width */
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+    /* margin-right: 20px; */
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-weight: 600;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.nav-button:hover {
+    background-color: #0b0c0e;
+    border-radius: 4px;
+}
+
+.dropdown {
+    position: relative;
+    top: 100px;
+    border: 3px solid black;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dropdown-toggle:hover {
+    background-color: #0056b3;
+    border-radius: 4px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    width: max-content;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-link {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.dropdown-link:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+.search-bar_startup {
+    display: flex;
+    align-items: center;
+    /* background-color: white; */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* align-items: center; */
+    /* padding-left: 30px; */
+    /* padding-right: 30px; */
+    /* width: 200px; */
+    margin-left: 30px;
+    /* margin-right: 30px; */
+}
+
+.bar-input {
+    border: none;
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    font-size: 16px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.search-bar_startup button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #02080e;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-bar_startup button:hover {
+    background-color: #0056b3;
+}
+
+.container_startup {
+    display: flex;
+    margin: 20px 0;
+    width: 1200px; /* Ensure container spans full width */
+    box-sizing: border-box;
+}
+
+.sidebar_startup {
+    width: 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.sidebar_startup h3 {
+    margin-top: 0;
+}
+
+.sidebar_startup .filter {
+    margin-bottom: 20px;
+}
+
+.sidebar_startup .filter label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sidebar_startup .filter input {
+    margin-right: 10px;
+}
+
+.main-content_startup {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%; /* Ensure main content spans full width */
+    box-sizing: border-box;
+}
+
+.investment-card_startup {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: inherit;
+}
+
+
+.investment-card_startup h3 {
+    margin-top: 0;
+}
+
+.investment-card_startup .investment-details {
+    margin-bottom: 10px;
+}
+
+.investment-card_startup .investment-stats {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.investment-card_startup .investment-stats p {
+    margin: 5px 0;
+}
+
+.free-access {
+    background-color: #007bff;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.low-volatility {
+    color: #28a745;
+}
+
+.medium-volatility {
+    color: #ffc107;
+}
+
+.high-volatility {
+    color: #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .main-content .investment-card {
+        width: 100%;
+    }
+}
+.filter_startup input{
+    border: 2px solid black;
+    width: 100px;
+}
+.filter_startup{
+    /* border: 2px solid black; */
+    line-height: 30px;
+}

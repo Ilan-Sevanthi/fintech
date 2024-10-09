@@ -1,0 +1,116 @@
+.gst-form-container {
+    width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    height: 900px;
+    /* overflow-y: scroll; */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .gst-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gst-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .gst-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 600;
+    margin-right: 60px;
+  }
+  
+  .required-symbol {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .gst-form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .gst-form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .gst-submit-button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 40%;
+    width: 150px;
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* justify-items: center; */
+  }
+  
+  .gst-submit-button:hover {
+    background-color: #218838;
+  }
+  
+  @media (max-width: 768px) {
+    .gst-form-container {
+      padding: 15px;
+    }
+  
+    .gst-submit-button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
+  .gst-date-container {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .gst-date-label {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .gst-input-with-checkbox {
+    /* width: 660px; */
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  .gst-input-with-checkbox :nth-child(1){
+    width: 30px;
+  }
+  .gst-input-with-checkbox :nth-child(1){
+    width: 30px;
+  }
+  
+  
+  .gst-input-with-checkbox input[type="checkbox"] {
+    margin-left: 10px;
+  }
+  
+  .gst-input-with-checkbox input[type="number"] {
+    width: calc(100% - 30px); /* Adjust width to accommodate checkbox */
+  }

@@ -1,0 +1,370 @@
+/* General Styles */
+* {
+  display: fixed;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search-box1 {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  position: relative; /* Allows positioning the icon inside */
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 490px;
+}
+  
+.search-input1 {
+  padding: 8px 10px; /* Padding adjusted to make space for the icon */
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  width: 100%;
+}
+
+.search-box1 i {
+  position: absolute;
+  right: 10px;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none; /* Prevents the icon from interfering with input */
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* This prevents horizontal scrolling */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #332e2e;
+  margin-left: 0px;
+  margin-right: 20px;
+  display: fixed;
+}
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .notification {
+    font-size: 25px;
+    margin: 20px;
+  }
+  
+  /* Body Container */
+  .bodyy {
+    display: flex;
+    margin-left: 50px;
+  }
+  
+  /* Container Styles */
+  .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 80px;
+    margin-top: 0px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 150px;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .Text {
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  
+  .cards-icon1, .cards-icon2, .cards-icon3 {
+    text-align: start;
+    margin-left: 150px;
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  
+  .cards-icon1 {
+    margin-left: 180px;
+    color: #4CAF50;
+  }
+  
+  .cards-icon2 {
+    color: #FF9800;
+  }
+  
+  .cards-icon3 {
+    color: #03A9F4;
+  }
+  
+  .value-section {
+    margin-top: 15px;
+  }
+  
+  .value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .change {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .positive {
+    color: #4CAF50;
+    margin-left: 90px;
+  }
+  
+  .negative {
+    color: #FF5722;
+    margin-left: 90px;
+  }
+  
+  /* Specific card styles */
+  .total-value {
+    border-left: 15px solid #4CAF50;
+  }
+  
+  .investments {
+    border-left: 15px solid #FF9800;
+  }
+  
+  .daily-change {
+    border-left: 15px solid #03A9F4;
+  }
+  
+  /* Tab Container */
+  .tab-container {
+    display: flex;
+    justify-content: space-between; /* Ensures the tabs are on the left and the search-box on the right */
+    align-items: center; /* Vertically aligns items */
+    padding: 10px 20px; /* Optional padding */
+  }
+  
+  .tabs {
+    display: flex;
+    align-items: center;
+    /* color: #eee; */
+  }
+  
+  .tab {
+    background-color: #FF9800;
+    border: 1px solid #fde2e2;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-right: 10px; /* Space between tabs */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: #000000;
+  }
+  .tabs a{
+    text-decoration: none;
+    /* color: #eee; */
+  }
+  
+  .tab:hover {
+    background-color: #6ea1ee;
+  }
+  
+  .tab:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Search Box Styles */
+  .search-box {
+    display: flex;
+    align-items: center;
+    position: relative; /* Allows positioning the icon inside */
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 400px;
+  }
+  
+  .search-input {
+    padding: 8px 10px; /* Padding adjusted to make space for the icon */
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 100%;
+  }
+  
+  .search-box i {
+    position: absolute;
+    right: 10px;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none; /* Prevents the icon from interfering with input */
+  }
+  
+  /* Diversification and Asset Growth Chart */
+  .DA-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .Diversification-chart-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 40%;
+    text-align: left;
+  }
+  
+  .Asset-chart-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+  }
+  
+  .chart-container h3 {
+    margin-bottom: 15px;
+  }
+  
+  .legend {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .legend ul {
+    list-style: none;
+    margin-top: 55px;
+    margin-left: 40px;
+  }
+  
+  .legend ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .legend ul li span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+  
+  i.fas.fa-calendar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: #999;
+  }
+  
+  .Top-Gainers-and-Watchlists {
+    display: flex;
+  }
+  
+  .T-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 39%;
+    padding: 20px;
+    margin-left: 70px;
+    margin-top: 20px;
+  }
+  
+  .W-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 618px;
+    padding: 20px;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .card-header h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-header a {
+    font-size: 14px;
+    color: #0d6efd;
+    text-decoration: none;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .trend {
+    font-weight: bold;
+  }
+  
+  .trend.positive {
+    color: #4CAF50;
+  }
+  
+  .trend.negative {
+    color: #FF5722;
+  }
+  
+  .arrow {
+    border: solid;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+  }
+  
+  .up {
+    transform: rotate(-45deg);
+  }
+  
+  .down {
+    transform: rotate(45deg);
+  }
+  

@@ -1,0 +1,161 @@
+/* General Container Styles */
+.container_find_fm {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* height: 700px; */
+    width: 1200px;
+  }
+  
+  /* Navbar Styles */
+  .navbar_fm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1a73e8;
+    color: white;
+  }
+  
+  .logo_fm {
+    font-size: 24px;
+  }
+  
+  .nav-links_fm {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-button_fm {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-button_fm:hover {
+    text-decoration: underline;
+  }
+  
+  .dropdown {
+    position: relative; /* Positioning context for dropdown */
+  }
+  
+  .dropdown-content_fm {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Positioning dropdown */
+    background-color: white;
+    min-width: 200px; /* Minimum width for dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Ensure dropdown appears above other content */
+  }
+  
+  .dropdown:hover .dropdown-content_fm {
+    display: block; /* Show dropdown on hover */
+  }
+  
+  .dropdown-link_fm {
+    color: #333;
+    padding: 12px 16px; /* Padding for dropdown links */
+    text-decoration: none;
+    display: block; /* Make links block elements */
+  }
+  
+  .dropdown-link_fm:hover {
+    background-color: #f1f1f1; /* Hover effect for links */
+  }
+  
+  /* Header Styles */
+  .brightvision-header_fm {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .brightvision-header_fm h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .brightvision-header_fm p {
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .choice-btn_fm {
+    background-color: #f0f3ff;
+    border: none;
+    color: #5966f1;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Main Content Styles */
+  .brightvision-content_fm {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .investment-options_fm, .chart-section_fm {
+    width: 48%;
+  }
+  
+  .investment-options_fm h3, .chart-section_fm h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .investment-options_fm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .option-item_fm {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+  
+  .btn_fm {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .high-growth_fm {
+    background-color: #1565C0;
+  }
+  
+  .balanced_fm {
+    background-color: #6A1B9A;
+  }
+  
+  .conservative_fm {
+    background-color: #BDBDBD;
+    color: #333;
+  }
+  
+  .options span_fm {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .note_fm {
+    color: #999;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .chart-section_fm img {
+    width: 100%;
+    border-radius: 8px;
+  }

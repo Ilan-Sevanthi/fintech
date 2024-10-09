@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .navbar_manager {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .navbar_manager ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar_manager ul li {
+    margin-left: 20px;
+  }
+  
+  .navbar_manager ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .container_manager {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header_manager {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .info_manager {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  .info_manager h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .info_manager p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .strategies_manager {
+    margin-top: 10px;
+  }
+  
+  .strategies_manager span {
+    display: inline-block;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+  
+  .header_manager img {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+  }
+  
+  /* Main Content */
+  .main-content_manager {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .manager-info_manager {
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+  
+  .main-content_manager h2 {
+    margin-top: 0;
+    font-size: 22px;
+  }
+  
+  .main-content_manager p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .manager-image_manager {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .manager-image_manager img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .popular_manager {
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Subscribe Section */
+  .subscribe_manager {
+    max-width: 300px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subscribe_manager h3 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .subscribe_manager p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .subscribe_manager button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .subscribe_manager .followers_manager {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+  }
+  
+  /* Smallcases Section */
+  .smallcases_manager {
+    margin-top: 20px;
+  }
+  
+  .smallcases_manager h3 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  .smallcase_manager {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .smallcase_manager:last-child {
+    border-bottom: none;
+  }
+  
+  .smallcase_manager img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .smallcase-info_manager {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  .smallcase-info_manager h4 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .smallcase-info_manager p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .smallcase-stats_manager {
+    text-align: right;
+  }
+  
+  .smallcase-stats_manager p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .volatility_manager {
+    color: #28a745;
+  }

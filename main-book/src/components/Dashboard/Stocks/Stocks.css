@@ -1,0 +1,590 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+  body {
+    background-color: #f9fafb;
+    font-size: 14px;
+   
+    color: #333;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  .stack-boby{
+    width: 1400px;
+  }
+  .Stack-App {
+    align-items: center;
+    /* margin-left: 100px; */
+    /* margin-right: 100px; */
+  }
+  
+  /* Navbar styling */
+  .Stack-navbar {
+    display: flex;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e49400;
+    padding: 10px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    /* width: 1200px; */
+  }
+  
+  .Stack-navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Stack-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .Stack-nav-link {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .Stack-nav-link:hover {
+    color: #004e97;
+  }
+  
+  .Stack-nav-link.active {
+    color: #004e97;
+  }
+  
+  .Stack-search-bar {
+    flex-grow: 1;
+    width: 300px;
+    margin-left: 20px;
+    position: relative;
+  }
+  .navbar input[type="text"] {
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 300px;
+    border: 1px solid #ddd;
+    margin-left: 150px;
+}
+  
+  .Stack-search-bar1 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding-left: 40px;
+  }
+  
+  .Stack-search-bar input::placeholder {
+    color: #999;
+  }
+  
+  .Stack-search-bar .icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #999;
+  }
+  
+  .Stack-navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Stack-icon {
+    font-size: 18px;
+    margin-right: 20px;
+    color: #999;
+  }
+  
+  .Stack-profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  
+  /* Stocks and Mutual Section */
+  .Stack-stocksandmutual h2 {
+    font-size: 24px;
+    color: #333;
+    padding: 20px 0 10px 20px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+  }
+  
+  /* Popular Funds Section */
+  .Stack-popular-funds {
+    padding: 0 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .Stack-popular_fund_sec {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .Stack-popular_fund_sec h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .Stack-popular_fund_sec p {
+    font-size: 14px;
+    color: #004e97;
+    margin-right: 150px;
+  }
+  
+  .Stack-funds {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .Stack-fund-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    height: 100px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .Stack-fund-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .Stack-fund-card h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .Stack-fund-card p {
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .Stack-fund-card p span {
+    color: #ff4d4f; /* Red for negative changes */
+  }
+  
+  /* Watchlist Section */
+  .Stack-watch-list-header {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .Stack-watch_list {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 450px;
+    box-shadow: #999;
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .Stack-watch_list h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .Stack-view-all a {
+    color: #004e97;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 200px;
+  }
+  
+  .Stack-fund_details {
+    margin-top: 10px;
+  }
+  
+  .Stack-fu_nd_name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .Stack-fund_returns {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  .Stack-fund_returns p {
+    margin: 0;
+  }
+  .Stack-explore_mutual {
+    display: flex;
+  }
+  /* Most Bought on Groww Section */
+  .Stack-Most-Bought-on-Groww {
+    text-align: left;
+    align-items: start;
+    margin-top: 30px;
+  }
+  .Stack-Most-Bought-on-Groww-div {
+    display: flex;
+  }
+  .Stack-MBG-fund-card {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    text-align: left;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  
+    border: 2px solid rgb(218, 218, 218);
+    margin: 20px;
+    width: 200px;
+    height: 180px;
+    margin-top: 50px;
+  }
+  
+  .Stack-MBG-imgs {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+  }
+  
+  /* Products & Tools */
+  
+  .Stack-PT-Image-Container {
+    display: flex;
+  }
+  .Stack-P-T {
+    display: flex;
+  }
+  .Stack-P-T-images {
+    margin-top: 20px;
+    height: 120px;
+    width: 180px;
+  }
+  .Stack-P-T-h3 {
+    text-align: center;
+  }
+  
+  .Stack-collection-item {
+    width: 15%;
+    height: 30%;
+    /* background-color: #f1f3f5; */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .Stack-collections_list {
+    display: flex;
+    gap: 100px;
+  }
+  .Stack-fund_details {
+    width: 380px;
+    border: 2px solid rgb(236, 232, 226);
+    font-size: smaller;
+    /* justify-content: space-between; */
+    padding: 20px;
+  }
+  .Stack-fund_returns {
+    /* display: flex; */
+    /* position: relative;
+    text-align: left; */
+    justify-content: space-between;
+    width: 330px;
+    border-bottom: 2px solid grey;
+  }
+  .Stack-fund_returns :nth-last-child(1) {
+    width: 240px;
+  }
+  .Stack-fu_nd_name {
+    display: flex;
+  }
+  .Stack-funds_by_grow {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Top Gainers */
+  
+  .Stack-Top-Gainerss-div {
+    margin-top: 40px;
+  }
+  .Stack-TG-buttons {
+    justify-content: space-between;
+    height: 30px;
+    width: 80px;
+    display: flex;
+    margin-top: 40px;
+    gap: 50px;
+    text-align: center;
+  }
+  
+  .Stack-TG-btn {
+    text-align: center;
+    background-color: #004e97;
+    border-color: #eeecec;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  
+  .Stack-Top-Gainers {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    text-align: left;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    font-weight: 500;
+    border: 2px solid rgb(218, 218, 218);
+    margin: 20px;
+    width: 200px;
+    height: 180px;
+    margin-top: 50px;
+  }
+  .Stack-img1 {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+  }
+  
+  .Stack-Top-Gainers-Groww {
+    display: flex;
+  }
+  
+  /* ETFs by Groww */
+  
+  .Stack-ETFs-Container {
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    font-weight: 500;
+    border: 2px solid grey;
+    margin: 20px;
+    width: 600px;
+    height: 150px;
+  }
+  
+  .Stack-ETFs-Container p {
+    font-weight: bold;
+  }
+  
+  /* Stocks In News */
+  .Stack-Stocks-Section-Container {
+    display: flex;
+  }
+  .Stack-Stocks-Container {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    text-align: left;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    font-weight: 500;
+    border: 2px solid rgb(218, 218, 218);
+    margin: 20px;
+    width: 200px;
+    height: 180px;
+    margin-top: 50px;
+  }
+  
+  /* Top Losers */
+  
+  .Stack-Top-losers-Groww {
+    display: flex;
+    margin-top: 20px;
+  }
+  .Stack-TL-btn {
+    text-align: center;
+    background-color: #004e97;
+    border-color: #eeecec;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  
+  .Stack-Top-losers {
+    background-color: white;
+    padding: 15px;
+  
+    flex-direction: column;
+    border-radius: 8px;
+    text-align: left;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    font-weight: 500;
+    border: 2px solid rgb(218, 218, 218);
+    margin: 20px;
+    width: 200px;
+    height: 180px;
+    margin-top: 50px;
+  }
+  
+  /* Top Sectors */
+  
+  .Stack-Top-Sectors-buttons {
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .Stack-Top-Sectors-buttons2 {
+    display: flex;
+  }
+  .Stack-TS-btn {
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #e7e7e7;
+    background-color: #004e97;
+  }
+  
+  /* Top by market cap */
+  .Stack-Top-by-Market-Cap-container h2 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .Stack-Top-by-Market-Cap-img {
+    height: 700px;
+    width: 600px;
+    margin-left: 25%;
+    align-items: center;
+  }
+  
+  /* Footer Styles */
+  .Stack-logo_groww {
+    color: black;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  .Stack-logo_groww img {
+    height: 80px;
+    width: 80px;
+    margin-left: 40px;
+  }
+  
+  .Stack-img1 {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .Stack-footer {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: rgb(189, 189, 189);
+    color: black;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Stack-footer-details {
+    width: 30%;
+  }
+  
+  .Stack-footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .Stack-footer-address {
+    margin-top: 10px;
+  }
+  
+  .Stack-footer-contact a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .Stack-footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+  
+  .Stack-footer-column {
+    width: 30%;
+  }
+  
+  .Stack-footer-column h3 {
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .Stack-footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .Stack-footer-column ul li {
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+  
+  .Stack-footer-column ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .Stack-footer-apps img {
+    width: 120px;
+    margin-right: 10px;
+  }
+  
+  .Stack-footer-apps a {
+    margin-right: 10px;
+  }
+  
+  .Stack-footer-social-media {
+    color: black;
+  }
+  
+  /* FundDetails.js */
+  
+  .Stack-FundDetails-img {
+    height: 700px;
+    width: 1200px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  /* .Stack-MBG-fund-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }  */
+
+  h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #333;
+}

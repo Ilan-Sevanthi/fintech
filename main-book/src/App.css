@@ -1,0 +1,180 @@
+/* General styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Sidebar container */
+.sidebar {
+  background-color: #000000;
+  color: white;
+  width: 200px;
+  height: calc(100vh - 60px);
+  padding: 30px 20px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  overflow-y: auto;
+  border-top-right-radius: 20px;
+  transition: left 0.8s ease;
+}
+
+/* Hide sidebar when the sidebar-hidden class is applied */
+.sidebar-hidden .sidebar {
+  left: -260px;
+}
+
+/* Heading style */
+.sidebar h2.heading {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  transition: color 0.8s ease;
+  text-align: center;
+  border-bottom: 1px solid #34495e;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+/* Sub-heading container */
+.sub-headings {
+  display: none;
+  flex-direction: column;
+  color: white;
+}
+
+/* Show sub-headings on hover and click */
+.sidebar h2.heading:hover + .sub-headings,
+.sidebar h2.heading.active + .sub-headings {
+  display: flex;
+}
+
+/* Sub-heading styles */
+.sidebar h3.sub-heading {
+  margin-bottom: 5px;
+  font-size: 16px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #34495e;
+  padding-bottom: 5px;
+  cursor: pointer;
+  color: #ecf0f1; /* Default color for sub-headings */
+  transition: color 0.8s ease, background-color 0.8s ease;
+}
+
+/* Active sub-heading */
+.sub-heading.active {
+  background-color: #34495e;
+  color: white; /* Ensure active sub-heading remains white */
+}
+
+/* Sub-label style */
+.sub-heading-content a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding-left: 40px;
+  border-bottom: 1px solid #34495e;
+  padding-bottom: 10px;
+}
+
+/* Align icons and text */
+.sidebar h2.heading .icon,
+.sidebar h3.sub-heading .icon {
+  margin-right: 15px; /* Spacing between icon and text */
+  font-size: 18px;
+}
+
+.sidebar h2.heading,
+.sidebar h3.sub-heading {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+/* Ensure consistent spacing and alignment for links */
+.sidebar a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.sidebar a .icon {
+  margin-right: 15px; /* Spacing between icon and text */
+  font-size: 18px;
+}
+
+/* Hover effect for links */
+.sidebar a:hover {
+  background-color: #34495e;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Toggle icon for sidebar */
+.toggle-icon {
+  margin-left: auto;
+  font-size: 14px;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #e49400;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar .menu-bar-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Main content styles */
+.main-content {
+  margin-top: 60px; /* Navbar height */
+  margin-left: 240px; /* Sidebar width */
+  padding: 20px;
+  background-color: #f8f8f8;
+  height: calc(100vh - 60px); /* Full viewport height minus navbar height */
+  overflow-y: auto;
+  width: calc(100% - 200px); /* Full width minus sidebar width */
+  transition: margin-left 0.8s ease, width 0.8s ease;
+}
+
+/* Main content when sidebar is hidden */
+.sidebar-hidden .main-content {
+  margin-left: 0;
+  width: 100%;
+}
+
+/* Ensure sub-heading has a default white color */
+.sub-heading h3 {
+  color: white;
+}

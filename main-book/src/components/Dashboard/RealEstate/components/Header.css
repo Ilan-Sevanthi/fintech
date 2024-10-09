@@ -1,0 +1,87 @@
+/* Navbar styles */
+.for-navbar {
+  background-color: #e49400;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.for-navbar .menu-bar-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+.nav1{
+  margin-right: 90px;
+   /* margin-top: 25px; */
+   align-items: center;
+   /* margin-right: 40px; */
+}
+/* Navigation Menu Styling */
+.nav1 ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav1 ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Add hover effect */
+.nav1 ul li a:hover {
+  color: #ffae00;
+}
+
+/* Post Property Button Styling */
+.post-property-btn {
+  background-color: #004e97;
+  color: #fdfdfd;
+  border: none;
+  /* padding: 10px 20px; */
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Post Property Button Hover Effect */
+.post-property-btn:hover {
+  background-color: #ffc107;
+}
+/* Navbar when sidebar is hidden */
+.sidebar-hidden .navbar {
+  left: 0; /* Adjusted to align with the content */
+  width: 100%; /* Full width when sidebar is hidden */
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.for-navbar-item {
+  margin-right: 30px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.for-navbar-item .icon {
+  margin-right: 8px;
+  font-size: 20px;
+}

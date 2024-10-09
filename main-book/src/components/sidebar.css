@@ -1,0 +1,96 @@
+/* Sidebar container */
+.sidebar {
+  background-color: #000000;
+  color: white;
+  width: 220px; /* Width of the sidebar */
+  height: calc(100vh - 60px); /* Full height minus navbar height */
+  padding: 30px 20px;
+  position: fixed;
+  top: 60px; /* Positioned below the navbar */
+  left: 0;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  z-index: 1000; /* Ensure it overlays the main content */
+}
+
+/* Hide sidebar when the sidebar-hidden class is applied */
+.sidebar-hidden .sidebar {
+  left: -220px; /* Move sidebar out of view when hidden */
+}
+
+/* Main content when the sidebar is visible */
+.main-content {
+  margin-left: 220px; /* Space for the sidebar */
+  transition: margin-left 0.3s ease;
+}
+
+/* When the sidebar is hidden */
+.sidebar-hidden .main-content {
+  margin-left: 0;
+}
+
+/* Heading style */
+.sidebar h2.heading {
+  margin-bottom: 10px; /* Reduced margin for tighter spacing */
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: white; /* Always visible */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  text-align: center; /* Center align text */
+  border-bottom: 1px solid #34495e; /* Divider below heading */
+  padding-bottom: 10px; /* Padding below heading text */
+  margin-top: 0; /* Remove default margin at the top */
+}
+
+/* Sub-heading container */
+.sub-headings {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+}
+
+/* Show sub-headings on hover */
+.sidebar h2.heading:hover + .sub-headings {
+  display: flex;
+}
+
+/* Sub-heading style */
+.sidebar h3.sub-heading {
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #34495e; /* Divider below sub-heading */
+  padding-bottom: 10px; /* Padding below sub-heading text */
+}
+
+/* Sub-label style */
+.sub-heading-content a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding-left: 40px;
+  border-bottom: 1px solid #34495e; /* Divider below sub-label */
+  padding-bottom: 10px; /* Padding below sub-label text */
+}
+
+.sub-heading-content a .icon {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 18px;
+}
+
+.sidebar a:hover {
+  background-color: #34495e;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.toggle-icon {
+  margin-left: auto;
+  font-size: 14px;
+}

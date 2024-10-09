@@ -1,0 +1,92 @@
+.bin-container {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.bin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bin-table th, .bin-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.bin-table th {
+  background-color: #f2f2f2;
+}
+
+.navbar_bin {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #ffc107;
+  color: #343a40;
+  height: 70px;
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.filter-section_bin {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between items */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.filter-section_bin input {
+  flex: 2; /* Ensures the search bar takes more space */
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.filter-section_bin select {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.view-mode-switch {
+  margin-left: 10px;
+}
+
+.view-mode-switch select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.filter-section_bin select, .filter-section_bin input {
+  height: 40px; /* Ensure uniform height for all inputs and dropdowns */
+}
+.sort-btn_BIN svg{
+  height: 25PX;
+}
+.sort-btn_BIN{
+  align-items: center;
+  height: 35px;
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px
+}
+.delete-btn{
+  align-items: center;
+  height: 30px;
+  background-color: blue;
+  color: white;
+  /* width: ; */
+  padding: 5px; 
+}

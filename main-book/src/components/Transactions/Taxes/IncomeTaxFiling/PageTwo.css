@@ -1,0 +1,227 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f7;
+} */
+.ITF-page2-header {
+    background-color: #003366;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ITF-page2-logo {
+    width: 50px;
+  }
+  
+  .ITF-page2-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .ITF-page2-nav li {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .ITF-page2-session-info {
+    color: white;
+    font-size: 14px;
+  }
+  
+  .ITF-page2-main {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .ITF-page2-itr-form {
+    width: 700px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: 250px;
+    margin-top: 10px;
+  }
+  
+  .ITF-page2-overall {
+    display: flex;
+  }
+  
+  .ITF-page2-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .ITF-page2-mandatory-note {
+    font-size: 12px;
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  .ITF-page2-form-group {
+    margin-bottom: 20px;
+  }
+  
+  .ITF-page2-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .ITF-page2-label-span {
+    color: red;
+  }
+  
+  .ITF-page2-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .ITF-page2-radio-group {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .ITF-page2-radio-group input {
+    margin-right: 5px;
+  }
+  
+  .ITF-page2-note {
+    background-color: #e0f2ff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .ITF-page2-form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ITF-page2-back-btn {
+    background-color: #ec4848;
+    color: #000;
+    height: 40px;
+    width: 70px;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .ITF-page2-continue-btn {
+    background-color: #001f80;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+  }
+  
+  .ITF-page2-information-box {
+    background-color: #e0f2ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    height: 150px;
+    width: 350px;
+    margin-left: 50px;
+  }
+  
+  .ITF-page2-information-box h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .ITF-page2-income-tax-return-container {
+    justify-content: center;
+    align-items: center;
+    height: 210px;
+    
+    width: 100%;
+    display: flex;
+  }
+  
+  .ITF-page2-income-tax-return-button{
+    padding: 5px;
+    background-color: #001f80;
+    border-radius: 5px;
+    text-decoration: none;
+    
+  }
+  .ITF-page2-box {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    height: 120px;
+    text-align: center;
+    width: 850px;
+  }
+  
+  .ITF-page2-income-tax-return-h3 {
+    padding-top: 10px;
+    height: 40px;
+    width: 100%;
+    background-color: #e0f2ff;
+  }
+  
+  .ITF-page2-btn {
+    padding: 20px;
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-between;
+    text-align: left;
+   
+  }
+  
+  .ITF-page2-footer {
+    /* background-color: #001f80;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%; */
+    background-color: #001f80;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 10px;
+    height: 50px;
+    width: 1000px;
+    left: 100px;
+    position: absolute;
+  }
+  
+  .ITF-page2-footer p {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  
+  .ITF-page2-anchor{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .ITF-link{
+    text-decoration:solid;
+    color: white;
+  }
+  .page2-back-btn{
+    height: 40px;
+    width: 100px;
+  }

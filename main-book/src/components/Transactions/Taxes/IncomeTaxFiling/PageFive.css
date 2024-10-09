@@ -1,0 +1,152 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+} */
+
+.ITF-page5-header {
+    background-color: #003366;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .ITF-page5-logo {
+    width: 50px;
+  }
+  
+  .ITF-page5-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .ITF-page5-nav li {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .ITF-page5-session-info {
+    color: white;
+    font-size: 14px;
+  }
+  
+  .ITF-page5-container {
+    background-color: white;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ITF-page5-h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .ITF-page5-p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .ITF-page5-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    margin-top: 35px;
+  }
+  
+  .ITF-page5-step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+  }
+  
+  .ITF-page5-step span {
+    background-color: #003366;
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 16px;
+  }
+  
+  .ITF-page5-buttons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  #page5-back-btn,
+  #page5-start-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #page5-back-btn {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  #page5-start-btn {
+    background-color: #003366;
+    color: white;
+  }
+  
+  .ITF-page5-documents,
+  .ITF-page5-faq {
+    margin-bottom: 30px;
+  }
+  
+  .ITF-page5-documents h3,
+  .ITF-page5-faq h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .ITF-page5-documents ul,
+  .ITF-page5-faq ul {
+    list-style: none;
+  }
+  
+  .ITF-page5-documents ul li,
+  .ITF-page5-faq ul li {
+    margin-bottom: 10px;
+  }
+  
+  .ITF-page5-documents ul li a,
+  .ITF-page5-faq ul li a {
+    color: #003366;
+    text-decoration: none;
+  }
+  
+  .ITF-page5-anchor {
+    color: white;
+  }
+  
+  .ITF-page5-footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #888;
+    font-size: 14px;
+  }
+  

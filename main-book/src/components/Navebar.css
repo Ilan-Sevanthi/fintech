@@ -1,0 +1,59 @@
+/* navbar.css */
+
+.navbar {
+  background-color: #c24100;
+  
+    /* background: linear-gradient(
+      750deg, 
+      blue, 
+      orange, 
+      skyblue, 
+      pink, 
+      rgb(196, 128, 241), 
+      lightgreen, 
+      green, 
+      red, 
+      yellow, 
+      purple
+    );
+   */
+  
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 200px; /* Positioned to the right of the sidebar */
+  width: calc(100% - 200px); /* Full width minus sidebar width */
+  z-index: 1000;
+  transition: left 0.3s ease, width 0.3s ease; /* Updated transition for smoother effect */
+}
+
+/* Navbar when sidebar is hidden */
+.sidebar-hidden .navbar {
+  left: 0; /* Adjusted to align with the content */
+  width: 100%; /* Full width when sidebar is hidden */
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.navbar-item {
+  margin-right: 30px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item .icon {
+  margin-right: 8px;
+  font-size: 20px;
+}

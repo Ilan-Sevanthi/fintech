@@ -1,0 +1,123 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+} */
+
+.ITF-page4-header {
+    background-color: #003366;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .ITF-page4-logo {
+    width: 50px;
+  }
+  
+  .ITF-page4-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .ITF-page4-nav li {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .ITF-page4-session-info {
+    color: white;
+    font-size: 14px;
+  }
+  
+  .ITF-page4-container {
+    background-color: white;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ITF-page4-status-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .ITF-page4-status-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .ITF-page4-help-text {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  #page4-itr-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .ITF-page4-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  #page4-back-btn,
+  #page4-proceed-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #page4-back-btn {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  #page4-proceed-btn {
+    background-color: #003366;
+    color: white;
+  }
+  
+  .ITF-page4-summary-link a {
+    display: block;
+    margin-top: 20px;
+    color: #003366;
+    text-decoration: none;
+    color: rgb(4, 4, 130);
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  
+  .ITF-page4-anchor {
+    color: white;
+  }
+  
+  .ITF-page4-footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #888;
+    font-size: 14px;
+  }
+  

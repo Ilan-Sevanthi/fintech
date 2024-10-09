@@ -1,0 +1,24 @@
+/* src/components/SearchSection.css */
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 400px;
+  border: 1px solid #004e97;
+  border-radius: 5px;
+}
+
+.search-btn {
+  background-color: #ffae00;
+  color: #004e97;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}

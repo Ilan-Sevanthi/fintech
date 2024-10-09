@@ -1,0 +1,213 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+} */
+
+/* Header styling */
+/* .ITF-page7-header {
+    background-color: #001f80;
+    color: white;
+    padding: 15px 30px;
+    height: 80px;
+    margin-bottom: 50px;
+  }
+   */
+  .ITF-page7-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ITF-page7-logo {
+    height: 50px;
+  }
+  
+  /* Navigation styling */
+  .ITF-page7-nav-ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .ITF-page7-nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  /* User info styling */
+  .ITF-page7-user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 14px;
+  }
+  
+  /* Container styling */
+  .ITF-page7-container {
+    background-color: white;
+    max-width: 1200px;
+    margin-top: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* Return summary styling */
+  .ITF-page7-return-summary {
+    margin-top: 20px;
+  }
+  
+  .ITF-page7-h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .ITF-page7-steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .ITF-page7-rounds{
+    background-color: #ccc;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  .ITF-page7-next-btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ITF-page7-next-btn:hover {
+    background-color: #004494;
+  }
+  
+  .ITF-page7-rounds.page7-active {
+    background-color: #0056b3; /* Active step color */
+    color: white;
+  }
+  
+  .ITF-page7-line {
+    flex-grow: 1;
+    border-top: 2px solid #00336647;
+    margin: 0 10px;
+  }
+  
+  /* Summary list styling */
+  .ITF-page7-summary-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .ITF-page7-summary-item {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    height: 400px;
+    width: 700px;
+    margin-left: 70px;
+  }
+  
+  .ITF-page7-images {
+    flex-shrink: 0;
+    height: 80px;
+    width: 80px;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  
+  .ITF-page7-image {
+    height: 60px;
+    width: 60px;
+    margin-left: 30px;
+  }
+  
+  .ITF-page7-details {
+    flex-grow: 1;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .ITF-page7-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  .ITF-page7-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .ITF-page7-action {
+    text-align: center;
+    color: #003366c1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .ITF-page7-action span {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .ITF-page7-summary-list button {
+    height: 30px;
+    width: 80px;
+    background-color: #003366;
+    border-radius: 5px;
+    color: #f4f4f4;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .ITF-page7-anchor {
+    color: white;
+  }
+  
+  .ITF-page7-active-item {
+    display: block;
+  }
+  

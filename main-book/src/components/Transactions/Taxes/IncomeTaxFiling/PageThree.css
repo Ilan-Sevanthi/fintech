@@ -1,0 +1,111 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+} */
+
+.ITF-page3-header {
+    background-color: #003366;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1160px;
+  }
+  
+  .ITF-page3-logo {
+    width: 50px;
+  }
+  
+  .ITF-page3-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .ITF-page3-nav li {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .ITF-page3-session-info {
+    color: white;
+    font-size: 14px;
+  }
+  
+  .ITF-page3-container {
+    background-color: white;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ITF-page3-status-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .ITF-page3-status-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .ITF-page3-radio-group {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .ITF-page3-radio-group label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .ITF-page3-radio-group input {
+    margin-right: 10px;
+  }
+  
+  .ITF-page3-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  #page3-back-btn, #page3-continue-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #page3-back-btn {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  #page3-continue-btn {
+    background-color: #003366;
+    color: white;
+  }
+  
+  .ITF-page3-anchor {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .ITF-page3-footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #888;
+    font-size: 14px;
+  }
+  

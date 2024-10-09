@@ -1,0 +1,496 @@
+/* App.css */
+
+/* General Styles */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+}
+
+.App {
+    /* text-align: center; */
+    padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* background-color: white; */
+    padding: 10px 20px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004e97;
+}
+
+.explore a {
+    color: #004e97;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.navbar .nav-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-weight: 600;
+}
+
+.navbar input[type="text"] {
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 500px;
+    border: 1px solid #ddd;
+    margin-left: 150px;
+}
+
+.nav-icons svg {
+    margin-left: 15px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.nav-icons {
+    margin-left: 250px;
+}
+
+.stocksandmutual {
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+    color:#004e97;
+}
+
+.stocksandmutual p:hover {
+    color: #004e97;
+    text-decoration: underline;
+}
+
+/* Popular Funds Section */
+.popular-funds {
+    margin-top: 30px;
+    /* background-color: white; */
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.popular-funds h2 {
+    text-align: left;
+}
+
+.popular_fund_sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular_fund_sec :nth-last-child(1) {
+    color: #004e97;
+}
+
+/* Ensures that all fund cards are displayed in a single row */
+.funds {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Prevents items from wrapping to the next line */
+    gap: 30px;
+    /* Space between items */
+    margin-top: 20px;
+    justify-content: flex-start;
+    /* Align items to the start of the container */
+    overflow-x: auto;
+    /* Adds horizontal scrolling if items overflow the container */
+}
+
+/* Styles for each fund card */
+.fund-card {
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid grey;
+    text-align: center;
+    /* Center text inside the card */
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items inside the card */
+}
+
+/* Styles for images inside fund cards */
+.fund-card img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    /* Space between image and text */
+}
+
+/* Styles for text inside fund cards */
+.fund-card p {
+    width: 100%;
+    /* Full width to fit inside the card */
+    font-weight: 600;
+    text-align: center;
+    /* Center text */
+}
+
+/* Styles for explore mutual section */
+.explore_mutual {
+    display: flex;
+    gap: 20px;
+    /* Space between items */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.new_mutal {
+    margin-left: 30px;
+    display: grid;
+    width: 450px;
+    border: 2px solid grey;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    gap: 10px;
+    /* justify-content: center; */
+}
+
+.new_mutal button {
+    background-color: #004e97;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.new_mutal img {
+    height: 100px;
+    /* text-align: center; */
+    justify-content: center;
+    margin-left: 140px;
+}
+
+.view-all {
+    display: block;
+    margin-top: 20px;
+    text-align: left;
+    color: #004e97;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Collections Section */
+
+.collections_head {
+    display: flex;
+    font-size: smaller;
+    justify-content: space-between;
+}
+
+.watchlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 250px;
+}
+
+.collections {
+    margin-top: 30px;
+    /* background-color: white; */
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.collection-item SVG {
+    height: 60px;
+    color: #004e97;
+}
+
+.collection-item {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    font-size: smaller;
+    font-weight: 600;
+    gap: 10px;
+}
+
+.collections h2 {
+    text-align: left;
+}
+
+.collection-items {
+    display: flex;
+    justify-content: space-between;
+    width: 850px;
+    margin-top: 20px;
+    /* gap: 40px; */
+}
+
+.collection-item {
+    width: 15%;
+    height: 30%;
+    /* background-color: #f1f3f5; */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.watchlist {
+    margin-top: 30px;
+    /* background-color: white; */
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.wish_list {
+    display: flex;
+    gap: 270px;
+}
+
+.watchlist h2 {
+    text-align: left;
+}
+
+.watchlist-items {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.watchlist-item {
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    font-weight: 500;
+}
+
+.view-all {
+    display: block;
+    margin-top: 20px;
+    text-align: left;
+    color: #004e97;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.collections_list {
+    display: flex;
+    gap: 100px;
+}
+
+/* Styling for fund details container */
+.fund_details {
+    width: 450px;
+    border: 2px solid rgb(236, 232, 226);
+    font-size: smaller;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* Stack content vertically */
+    gap: 10px;
+    /* Adds space between elements inside */
+}
+
+/* Styling for fund returns section */
+.fund_returns {
+    display: flex;
+    position: relative;
+    /* justify-content: space-between; */
+    text-align: left;
+    width: 100%;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+}
+
+.fund_returns :nth-last-child(1){
+    text-align: right;
+}
+
+/* Last child of fund_returns will take specific width */
+.fund_returns :nth-last-child(1) {
+    width: 240px;
+}
+
+/* Aligns fund name in a row */
+.fu_nd_name {
+    display: flex;
+    align-items: center;
+    /* Vertically center items */
+    gap: 10px;
+    justify-content: space-between;
+    /* Add space between elements in the row */
+}
+
+/* Aligning funds by Groww in a row with gap */
+.funds_by_grow {
+    display: flex;
+    gap: 20px;
+    /* Adds space between the items */
+    align-items: center;
+    justify-content: space-between;
+    /* Ensures items are vertically centered */
+}
+
+.watch_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100px; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* Quick Access Section */
+.quick-access {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.quick-access svg {
+    height: 30px;
+}
+
+.quick-access h2 {
+    text-align: left;
+}
+
+.quick-access-items {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.quick-access-item {
+    width: 210px;
+    height: 5%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    text-align: center;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    font-weight: 500;
+    border: 2px solid grey;
+    gap: 10px;
+}
+
+/* Footer Styles */
+.logo_groww {
+    color: black;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: start;
+}
+
+.logo_groww img {
+    height: 30px;
+    margin-right: 15px;
+}
+
+.footer {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: rgb(189, 189, 189);
+    color: black;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-details {
+    width: 30%;
+    /* justify-content: space-between; */
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-address {
+    margin-top: 10px;
+}
+
+.footer-contact a {
+    color: rgb(230, 0, 0);
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-apps img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.footer-apps a {
+    margin-right: 10px;
+}
+
+.footer-social-media {
+    color: black;
+}
+
+.new_mutal button {
+    color: #f9fafb;
+
+}
+
+.wishlist_collection {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 80px; */
+}

@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .container_bills {
+    display: flex;
+    width: 100%;
+    /* width: 1000px; */
+    max-width: 1300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Layout for Two Columns */
+  .split-screen_bills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    width: 800px;
+    /* width: 100%; Ensure it takes up full width */
+    height: 80vh; /* Set height to allow scrolling */
+  }
+  
+  .section {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Allow scrolling within the sections */
+    max-height: 100%; /* Ensure it doesn't overflow outside the container */
+  }
+  
+  .section h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  .section-generate-bills {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 550px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-height: 70vh; /* Set a maximum height for Generate Bill section */
+    overflow-y: auto; /* Enable scrolling when content overflows */
+  }
+  
+  .section-recurring-bills {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 550px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-height: 70vh; /* Set a maximum height for Recurring Bill section */
+    overflow-y: auto; /* Enable scrolling when content overflows */
+  }
+  
+  /* Form Styles */
+  .form-group_bills {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .form-group input[type="date"] {
+    padding: 6px;
+  }
+  
+  .submit-button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  
+  .submit-button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Table Styles */
+  .table-container {
+    margin-top: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  .statement-card_bills {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .header {
+    background-color: #e0e7ec;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 0;
+  }
+  
+  .header h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    margin: 5px 0;
+  }
+  
+  .note {
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .next-button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .next-button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Flexbox Layout Adjustments for Smaller Screens */
+  @media (max-width: 768px) {
+    .split-screen {
+      flex-direction: column;
+    }
+  
+    .section {
+      width: 100%;
+    }
+  }
+  .submit-button_bills {
+    background-color: #ffc107;
+    color: rgb(27, 3, 3);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  .button_bills {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button_bills:hover {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  .generate-invoice-button_bills {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .ashterisk_bills {
+    color: red;
+    font-weight: bold;
+  }
+  input,
+  generate-bill-form {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .section-recurring-bills h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .section-generate-bills h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .bills_client {
+    color: black;
+  }
+  .inovice_btn_bills_submit {
+    display: flex;
+    flex-direction: row;
+  }
+  /* Reset Styles */
+  .invoice-actions_invoice {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Main Container */
+  .container_bills {
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Header */
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Layout for Two Columns */
+  .split-screen_bills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    height: 80vh; /* Set height to allow scrolling */
+  }
+  
+  /* Section Styles */
+  .section-generate-bills,
+  .section-recurring-bills {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-height: 70vh; /* Set a maximum height for each section */
+    overflow-y: auto; /* Enable scrolling when content overflows */
+  }
+  
+  /* Section Headers */
+  .section-generate-bills h2,
+  .section-recurring-bills h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Form Styles */
+  .form-group_bills {
+    margin-bottom: 15px;
+  }
+  
+  .form-group_bills label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-group_bills input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+  
+  .form-group_bills input[type="date"] {
+    padding: 6px;
+  }
+  
+  .submit-button_bills,
+  .generate-invoice-button_bills,
+  .button_bills {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  .submit-button_bills {
+    background-color: #ffc107;
+    color: rgb(27, 3, 3);
+  }
+  
+  .submit-button_bills:hover {
+    background-color: #e0a800;
+    color: #fff;
+  }
+  
+  .generate-invoice-button_bills {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .generate-invoice-button_bills:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table Styles */
+  .table-container {
+    margin-top: 0;
+  }
+  
+  .invoice-table_invoice {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  /* Modal Styles */
+  .modal_invoice {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+    margin-left: 500px;
+  }
+  
+  .modal-content_invoice {
+    background-color: rgb(247, 244, 244);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 1000px;
+    position: relative;
+    gap: 10px;
+    box-shadow: #777 3px 3px 3px 3px;
+  }
+  .modal_invoice h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .close_invoice {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #343a40;
+  }
+  
+  /* Note and Button Styles */
+  .note {
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .next-button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .next-button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Flexbox Layout Adjustments for Smaller Screens */
+  @media (max-width: 768px) {
+    .split-screen_bills {
+      flex-direction: column;
+    }
+  
+    .section-generate-bills,
+    .section-recurring-bills {
+      width: 100%;
+    }
+  }
+  
+  /* Custom Styles */
+  .ashterisk_bills {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .bills_client {
+    color: black;
+  }
+  
+  .inovice_btn_bills_submit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .invoice-actions_invoice button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffc107;
+    color: #343a40;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .invoice-actions_invoice button:hover {
+    background-color: #ffc107;
+    color: white;
+  }
+  .modal_invoice p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .invoice-details p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .bill-to{
+    line-height: 30px;
+  }
+  
+  .ownership-details_invoice h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .ownership-details_invoice p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .ownership-details_invoice{
+    line-height: 30px;
+  }
+  .invoice-header,
+  .invoice-details,
+  .ownership-details,
+  .bill-to{
+    line-height: 30px;
+  }
+  .invoice-table{
+    margin-top: 20px;
+  }
+  .invoice-actions_invoice{
+    margin-top: 20px;
+  }
